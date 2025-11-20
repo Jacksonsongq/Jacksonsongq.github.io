@@ -6,76 +6,94 @@
   <meta name="viewport" content="width=device-width, maximum-scale=1">
   <style>
     body {
-      max-width: 720px;
+      max-width: 820px;
       margin: auto;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       padding: 40px 20px;
       line-height: 1.6;
     }
-    h1 { margin-bottom: 0; }
-    h2 { margin-top: 40px; }
-    img {
-      width: 160px;
-      border-radius: 8px;
-      margin-top: 20px;
-      display: block;
+
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 35px;
     }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
     .email {
       color: #555;
       font-size: 14px;
     }
+
+    h2 { margin-top: 40px; }
+
     a { color: #0366d6; text-decoration: none; }
     a:hover { text-decoration: underline; }
   </style>
 </head>
+
 <body>
 
-<h1>Jackson Song</h1>
-<div class="email">Master's Student in Statistics & Data Science, Northwestern University</div>
-<div class="email">Email: jackson.song@u.northwestern.edu</div>
-
-<img src="photo.jpg" alt="profile photo">
+<div class="profile-container">
+  <img src="photo.JPG" class="profile-photo" alt="Profile Photo">
+  <div>
+    <h1>Jackson Song</h1>
+    <div class="email">Master's Student in Statistics & Data Science, Northwestern University</div>
+    <div class="email">Email: jackson.song@u.northwestern.edu</div>
+  </div>
+</div>
 
 <h2>About Me</h2>
 <p>
-I am currently a master's student in Statistics and Data Science at Northwestern University.
-My work spans statistical learning, applied statistics, and machine learning. I am part of an ongoing
-collaborative research effort involving large-scale cardiovascular cohort data, where I contribute to modeling,
-data integration, and analytical workflow development. I am broadly interested in methodological problems
-at the intersection of statistics and machine learning, and how they can be applied to real-world scientific and
+I am a master's student in Statistics and Data Science at Northwestern University.
+My work spans on applied statistics, machine learning, biostatistics,
+and artificial intelligence. I am currently working on a large-scale collaborative
+project involving 35 years of cardiovascular cohort data (CARDIA), together with
+faculty in Northwestern’s Feinberg School of Medicine and external collaborators.
+I am broadly interested in methodological problems at the interface of statistics
+and machine learning, and how these tools can address real-world scientific and
 health-related questions.
 </p>
+
 
 <h2>Research Interests</h2>
 <ul>
   <li>High-dimensional statistics</li>
-  <li>Causal inference</li>
   <li>Survival analysis</li>
-  <li>Longitudinal studies</li>
-  <li>Machine learning, statistical learning, and representation learning</li>
+  <li>Causal inference</li>
+  <li>Machine learning & representation learning</li>
 </ul>
 
 <h2>Selected Projects</h2>
-<ul>
-  <li><b>CARDIA Cohort Analysis</b> – High-dimensional modeling, data integration, survival analysis.</li>
-  <li>
-  <b>CI Athena (CustomerInsights.ai)</b> – Contributed to the development of a multi-agent automation platform for healthcare analytics, including clustering-based modeling components and LangGraph-driven data processing agents.
-  <a href="https://www.customerinsights.ai/ciathena" target="_blank">[Product Page]</a>
-</li>
 
-</ul>
+<h3>CARDIA Proteomics & Cardiovascular Health</h3>
+<p>
+I lead statistical modeling and analytical workflow development for the CARDIA 
+proteomics project, which integrates 35 years of cardiovascular health data with 
+over 5,000 plasma protein measurements from 5,000+ participants. My work involves 
+cross-sectional and longitudinal analysis of cardiovascular health scores, identifying 
+six consistent protein signals through mixed-effects modeling. I also develop 
+survival prediction frameworks using SIS-based screening and LASSO-penalized Cox 
+models, constructing proteomic risk scores and evaluating predictive performance 
+through C-index, IDI, and Kaplan–Meier methods.
+</p>
+
+<h3>CI Athena (CustomerInsights.ai)</h3>
+<p>
+Contributed to the design of a multi-agent healthcare analytics platform including 
+clustering pipelines, anomaly detection, and LangGraph-based AI agents. 
+<a href="https://www.customerinsights.ai/ciathena" target="_blank">[Product Page]</a>
+</p>
 
 <h2>CV</h2>
-<p>
-<a href="cv.pdf" target="_blank">View CV (PDF)</a>
-</p>
-
-<h2>Contact</h2>
-<p>
-Email: jackson.song@u.northwestern.edu  
-<br>
-GitHub: <a href="https://github.com/YOUR_USERNAME" target="_blank">github.com/YOUR_USERNAME</a>
-</p>
+<p><a href="cv.pdf" target="_blank">View CV (PDF)</a></p>
 
 </body>
 </html>
